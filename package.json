@@ -6,6 +6,12 @@
   "author": "Craig Thompson",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "babel-jest": "^26.6.3",
     "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest --verbose"
   }
 }
