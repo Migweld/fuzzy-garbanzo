@@ -8,6 +8,7 @@ export const accountTypeChecker = (accountBalanceHistory) => {
   accountBalanceHistory.sort((a, b) => b.monthNumber - a.monthNumber).slice(1).map((month, index) => {
     const { account: { balance: { amount: currentAmount } } } = month;
     const { account: { balance: { amount: nextAmount } } } = accountBalanceHistory[index];
+
     let diff = currentAmount - nextAmount;
 
     resultSet.add(diff);
